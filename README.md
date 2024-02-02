@@ -7,7 +7,10 @@ The aforementioned error has been elaborated upon in greater detail within the p
 
 How to replicate the error
 ----
-1. npm i
+1. Install npm pkgs
+```sh
+npm i
+```
 2. run docker compose to run the database
 ```sh
 docker compose up -d
