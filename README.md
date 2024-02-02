@@ -7,21 +7,22 @@ The aforementioned error has been elaborated upon in greater detail within the p
 
 How to replicate the error
 ----
-1. run docker compose to run the database
+1. npm i
+2. run docker compose to run the database
 ```sh
 docker compose up -d
 ```
-2. migrate dev 
+3. migrate dev 
 ```sh
 npx prisma migrate dev
 ```
-3. now run the server 
+4. now run the server 
 ```sh
 node server.js
 ```
-4. go to http://localhost:3000 and init the data
-5. go to http://localhost:3000/bug
-6. now in terminal(where you run the node server.js) you should see the error
+5. go to http://localhost:3000 and init the data
+6. go to http://localhost:3000/bug
+7. now in terminal(where you run the node server.js) you should see the error
 
 <br>
 
