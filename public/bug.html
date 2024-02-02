@@ -21,6 +21,14 @@
       padding: 20px;
       font-size: 19px;
     }
+
+    section {
+      text-align: center;
+      padding: 16px;
+      font-size: 18px;
+      line-height: 28px;
+      color: #be123c;
+    }
   </style>
 </head>
 <body>
@@ -32,6 +40,10 @@
 <article>
   See the error in terminal
 </article>
+
+<section>
+Please be advised that the aforementioned error solely occurs when utilizing the preview feature RelationJoins. Consequently, if you choose to comment out the RelationJoins section in the Prisma schema and run the npx prisma generate, you will effectively prevent the occurrence of this error.
+</section>
   
 </body>
 </html>
