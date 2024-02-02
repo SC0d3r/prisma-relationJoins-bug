@@ -9,15 +9,15 @@ How to replicate the error
 ----
 1. run docker compose to run the database
 ```sh
-$ docker compose up -d
+docker compose up -d
 ```
 2. migrate dev 
 ```sh
-$ npx prisma migrate dev
+npx prisma migrate dev
 ```
 3. now run the server 
 ```sh
-$ node server.js
+node server.js
 ```
 4. go to http://localhost:3000 and init the data
 5. go to http://localhost:3000/bug
