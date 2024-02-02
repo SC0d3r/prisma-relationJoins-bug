@@ -5,27 +5,31 @@ This repository serves the purpose of reporting a bug pertaining to the utilizat
 The aforementioned error has been elaborated upon in greater detail within the provided link.
 [here](https://github.com/prisma/prisma/issues/22299#issuecomment-1873115529) by [@michaelchen01](https://github.com/michaelchen01) and [here](https://github.com/prisma/prisma/issues/22299#issuecomment-1873417562) by [@SC0d3r](https://github.com/SC0d3r)
 
-How to replicate the error
+Steps for Replicating the Error
 ----
-1. Install npm pkgs
+1. clone the repo
+```sh
+git clone https://github.com/SC0d3r/prisma-relationJoins-bug.git
+```
+2. Install npm pkgs
 ```sh
 npm i
 ```
-2. run docker compose to run the database
+3. run docker compose to run the database
 ```sh
 docker compose up -d
 ```
-3. migrate dev 
+4. migrate dev 
 ```sh
 npx prisma migrate dev
 ```
-4. now run the server 
+5. now run the server 
 ```sh
 node server.js
 ```
-5. go to http://localhost:3000 and init the data
-6. go to http://localhost:3000/bug
-7. now in terminal(where you run the node server.js) you should see the error
+6. go to http://localhost:3000 and init the data
+7. go to http://localhost:3000/bug
+8. now in terminal(where you run the node server.js) you should see the error
 
 <br>
 
