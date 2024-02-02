@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 16px;
+}
+
+header h1{ 
+  text-align: center;
+}
+
+.disabled {
+  color: gray;
+  pointer-events: none;
+}
+
+.disabled-btn{
+  color: silver !important;
+  pointer-events: none !important;
+  background-color: rgba(0,0,0,0.08) !important;
+  box-shadow: none !important;
+}
+
+section {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.initialized {
+  display: none;
+}
+
+.not-initialized{
+  display: flex;
+  align-items: center;
+}
+
+.not-initialized p{
+  font-size: 18px;
+}
+
+.not-initialized div {
+  padding:12px;
+}
+
+.not-initialized div button {
+  position: relative;
+  font-size: 14px;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+  /* background: #2980b9; */
+  background: #341f97;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.not-initialized div button:hover {
+  /* background: #3a91ca; */
+  background: #452fa8;
+}
+
+.initialized {
+  color: #009432;
+  padding: 12px;
+}
+
+article {
+  padding: 12px;
+  font-size: 15px;
+}
+
+article a {
+  color: #2d98da;
+}
+
+article a:hover {
+  color: #3ea9eb;
+}
+
+.loading { 
+  display: none;
+  /* display: inline-flex; */
+  position: absolute;
+  place-content: center;
+  margin: auto;
+  inset: 0;
+  width:50;
+  height: 90%;
+  vertical-align: "middle";
+}
+
+@keyframes spinners-react-circular-fixed {
+  0% { strokeDashoffset: 325 }
+  100% { strokeDashoffset: 151 }
+}
+
+circle {
+  animation: spinners-react-circular-fixed 0.75s linear infinite;
+}
+

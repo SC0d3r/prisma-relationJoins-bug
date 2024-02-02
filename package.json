@@ -1,0 +1,21 @@
+{
+  "name": "prisma-relationjoins-bug",
+  "version": "1.0.0",
+  "description": "Prisma `RelationJoins` bug ---- This repository serves the purpose of reporting a bug pertaining to the utilization of Prisma's **relationJoins** in conjunction with **orderBy**, which subsequently leads to an error.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "prisma",
+    "relationJoins"
+  ],
+  "author": "SC0d3r",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "express": "^4.18.2",
+    "prisma": "^5.9.1"
+  }
+}

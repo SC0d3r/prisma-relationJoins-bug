@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <title>Prisma RelationJoins bug</title>
+</head>
+<body>
+
+<header>
+  <h1>Prisma <b>RelationJoins</b> Bug</h1>
+</header>
+
+<section>
+
+  <div class="not-initialized">
+    <p>
+      Data is not initialized yet
+    </p>
+
+    <div>
+      <button>
+        <span class="btn-txt">Initialize Data</span>
+        <span class="loading">
+          <svg
+            fill="none"
+            viewBox="0 0 66 66"
+          >
+            <circle
+              cx="33"
+              cy="33"
+              fill="none"
+              r="28"
+              stroke="rgba(207, 222, 241, 1)"
+              strokeWidth="7.2"
+            />
+            <circle
+              cx="33"
+              cy="33"
+              fill="none"
+              r="28"
+              stroke="#bdc3c7"
+              strokeDasharray="40, 134"
+              strokeDashoffset="325"
+              strokeLinecap="round"
+              strokeWidth="7.2"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <div class="initialized">
+    Data is initialized
+  </div>
+
+</section>
+
+<article>
+ <p>
+  Now click on bellow link to go to bug page and see the generated error in terminal
+ </p>
+ <a class="disabled" href="http://localhost:3000/bug">
+  Go to bug page
+ </a>
+</article>
+  
+</body>
+<script src="init.js"></script>
+</html>
